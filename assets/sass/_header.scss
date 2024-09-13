@@ -1,0 +1,133 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transition: .3s;
+    list-style: none;
+    color: #4F5665;
+}
+
+.navbar ul button {
+    display: none;
+}
+.label_menu li a{
+    color: #363738;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    color: grey;
+}
+ .imges:hover{
+    transform: scale(1.2);
+    transition: 0.3s linear;
+}
+li a:hover{
+    color: blue;
+    font-size: 21px;
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+li img:hover{
+    font-size: 21px;
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+.chack{
+    display: none;
+}
+.labl {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu{
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 900px) {
+    .labl {
+        display: block;
+        color: white;
+    }
+    .menu{
+        display: block;
+    }
+    .buttons label {
+        display: block;
+    }
+    .buttons{
+        display: block;
+    }
+    .chack{
+        display: block;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    .navbar ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        display: flex;
+        height: 100vh;
+        background-color: #272727;
+        width: 70%;
+        flex-direction: column;
+        opacity: .7;
+    }
+
+    .navbar ul a {
+        color: #fff;
+    }
+
+
+    .navbar ul a:hover {
+        color: grey;
+    }
+}
+@media(max-width:700px){
+    .navbar img{
+        width: 30%;
+    }
+}
+@media(max-width: 300px) {
+    .navbar img {
+        width: 30%;
+    }
+
+    .buttons i {
+        font-size: 15px;
+        gap: 5px;
+    }
+}
+
+#check:checked ~ .label_menu {
+    transform: scale(1);
+}

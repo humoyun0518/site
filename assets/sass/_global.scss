@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2";
+}
+.container {
+  max-width: 1400px;
+  padding: 0 21px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-color: #363738;
+  --primary-color2: #c3bcbc;
+  --primary-color3: #6b6b6c;
+  --primary-color4: #6b6b6c;
+  --primary-color5: #0B7572;
+  --primary-color6: #fff;
+  --primary-color7: #FFCE50;
+  --primary-color8: #3498db;
+  --primary-color9: #3498db;
+  --primary-color10: #3498db;
+  --primary-color10: #00000033;
+}
